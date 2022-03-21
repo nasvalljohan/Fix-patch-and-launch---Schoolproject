@@ -1,4 +1,4 @@
-package com.krillinator.android_studio_lab_2
+package com.ploohan.android_studio_lab_2
 
 import org.junit.Test
 

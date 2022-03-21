@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.krillinator.android_studio_lab_2">
+    package="com.ploohan.android_studio_lab_2">
 
     <application
         android:allowBackup="true"
@@ -10,13 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Android_Studio_Lab_2">
         <activity
-            android:name=".MainActivity"
+            android:name="com.ploohan.android_studio_lab_2.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".LoginActivity">
+            
         </activity>
     </application>
 
