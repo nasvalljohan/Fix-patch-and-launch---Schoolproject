@@ -38,9 +38,7 @@ class UserActivity : Fragment() {
 
         view.setOnClickListener() {
 
-            //TODO Add another fragment and swap to it
-            //TODO Add recyclerView to second fragment
-            //TODO Add hardcoded values to recyclerView
+
         }
 
         return view

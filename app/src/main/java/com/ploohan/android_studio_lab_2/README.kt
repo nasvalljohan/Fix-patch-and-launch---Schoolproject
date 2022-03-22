@@ -6,6 +6,7 @@ package com.ploohan.android_studio_lab_2
 /* TODO -
 *        Make sure the navigation controller contains 2 fragments. (you decide what they include)
 *        Make sure you're able to 'navigate' with fragments setOnClickListener
+*        Send variable to UserActivityFragment instead of MainActivity. 
 *
 * */
 
