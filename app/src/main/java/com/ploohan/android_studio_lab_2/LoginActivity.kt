@@ -20,28 +20,28 @@ class LoginActivity : AppCompatActivity() {
         // Arraylist for email & password, checking if pw & email matches.
 
         val emailText = findViewById<EditText>(R.id.EmailText)
-        val passWord = findViewById<EditText>(R.id.pwText)
+        val passWordText = findViewById<EditText>(R.id.pwText)
         val loginBtn = findViewById<Button>(R.id.loginBtn)
-        val userMailAddress = ArrayList<String>()
-        val userPw = ArrayList<String>()
+        val listMailAddress = ArrayList<String>()
+        val listPw = ArrayList<String>()
 
-        userMailAddress.add("johan@gmail.com") // 0
-        userMailAddress.add("ploo@gmail.com") // 1
-        userMailAddress.add("johanna@gmail.com") // 2
-        userMailAddress.add("1")
+        listMailAddress.add("johan@gmail.com") // 0
+        listMailAddress.add("ploo@gmail.com") // 1
+        listMailAddress.add("johanna@gmail.com") // 2
+        listMailAddress.add("admin")
 
-        userPw.add("johan") //0
-        userPw.add("ploo")  //1
-        userPw.add("johanna")   //2
-        userPw.add("1")
+        listPw.add("johan") //0
+        listPw.add("ploo")  //1
+        listPw.add("johanna")   //2
+        listPw.add("admin")
 
 
         loginBtn.setOnClickListener {
             val emailString = emailText.text.toString()
-            val passwordString = passWord.text.toString()
+            val passwordString = passWordText.text.toString()
 
-            if (userMailAddress.contains(emailString) && userPw.contains(passwordString)) {
-                if (userMailAddress.indexOf(emailString) == userPw.indexOf(passwordString)) {
+            if (listMailAddress.contains(emailString) && listPw.contains(passwordString)) {
+                if (listMailAddress.indexOf(emailString) == listPw.indexOf(passwordString)) {
                     val intent = Intent(this, MainActivity::class.java).apply {
                         putExtra("textMsg", emailString)
                     }
