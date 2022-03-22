@@ -25,15 +25,16 @@ class LoginActivity : AppCompatActivity() {
         val listMailAddress = ArrayList<String>()
         val listPw = ArrayList<String>()
 
-        listMailAddress.add("johan@gmail.com") // 0
-        listMailAddress.add("ploo@gmail.com") // 1
-        listMailAddress.add("johanna@gmail.com") // 2
-        listMailAddress.add("admin")
+        //Users
+        listMailAddress.add("johan@gmail.com")   //0
+        listMailAddress.add("ploo@gmail.com")    //1
+        listMailAddress.add("johanna@gmail.com") //2
+        listMailAddress.add("admin")             //3
 
-        listPw.add("johan") //0
-        listPw.add("ploo")  //1
-        listPw.add("johanna")   //2
-        listPw.add("admin")
+        listPw.add("johan")                      //0
+        listPw.add("ploo")                       //1
+        listPw.add("johanna")                    //2
+        listPw.add("admin")                      //3
 
 
         loginBtn.setOnClickListener {
@@ -42,7 +43,7 @@ class LoginActivity : AppCompatActivity() {
 
             if (listMailAddress.contains(emailString) && listPw.contains(passwordString)) {
                 if (listMailAddress.indexOf(emailString) == listPw.indexOf(passwordString)) {
-                    val intent = Intent(this, MainActivity::class.java).apply {
+                    val intent = Intent(this, NavHostActivity::class.java).apply {
                         putExtra("textMsg", emailString)
                     }
                     startActivity(intent)

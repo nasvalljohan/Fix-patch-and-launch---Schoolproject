@@ -5,4 +5,13 @@
     android:id="@+id/frameLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".UserActivity"/>
+    tools:context=".UserActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="First fragment"
+        tools:layout_editor_absoluteX="172dp"
+        tools:layout_editor_absoluteY="276dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

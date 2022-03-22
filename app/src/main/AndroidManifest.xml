@@ -10,7 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Android_Studio_Lab_2">
         <activity
-            android:name="com.ploohan.android_studio_lab_2.MainActivity"
+            android:name=".NavHostActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,9 +21,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LoginActivity">
-            
-        </activity>
+        <activity android:name=".LoginActivity"></activity>
     </application>
 
 </manifest>
