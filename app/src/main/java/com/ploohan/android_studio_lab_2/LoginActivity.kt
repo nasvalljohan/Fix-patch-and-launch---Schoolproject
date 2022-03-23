@@ -19,6 +19,9 @@ class LoginActivity : AppCompatActivity() {
         // Sent emailtext to mainactivity with intent, added to textview.
         // Arraylist for email & password, checking if pw & email matches.
 
+
+        // Tjena PLOOOOOO
+
         val emailText = findViewById<EditText>(R.id.EmailText)
         val passWordText = findViewById<EditText>(R.id.pwText)
         val loginBtn = findViewById<Button>(R.id.loginBtn)
