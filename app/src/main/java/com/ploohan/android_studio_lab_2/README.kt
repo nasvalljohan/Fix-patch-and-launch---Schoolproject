@@ -4,7 +4,7 @@ package com.ploohan.android_studio_lab_2
 
 /** FOURTH PROBLEM - Implement Navigation Controller */
 /* TODO -
-*        Fix Fragment-size, 1st fragment 25% of height, 2nd 75% and contain recyclerView       
+*    5
 *        Send variable to UserActivityFragment instead of MainActivity.
 *
 * */

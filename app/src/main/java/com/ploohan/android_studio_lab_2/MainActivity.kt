@@ -25,12 +25,12 @@ class MainActivity : AppCompatActivity() {
         val name = intent.getStringExtra("textMsg")
 
         if (name != null){
-            textMsg.text = "Welcome $name"
-            val text = "You are now logged in!"
-            val duration = Toast.LENGTH_LONG
-            val toast = Toast.makeText(applicationContext, text, duration)
-            toast.show()
-        }
+         textMsg.text = "Welcome $name"
+         val text = "You are now logged in!"
+         val duration = Toast.LENGTH_LONG
+         val toast = Toast.makeText(applicationContext, text, duration)
+         toast.show()
+      }
 
 
 
