@@ -48,7 +48,6 @@ class UserActivityFragment : Fragment() {
             parentFragmentManager.beginTransaction()
             Navigation.findNavController(root).navigate(R.id.action_userActivity_to_recyclerViewActivityFragment)
         }
-
         return root
     }
 

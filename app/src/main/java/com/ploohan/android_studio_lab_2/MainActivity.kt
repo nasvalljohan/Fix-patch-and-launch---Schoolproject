@@ -31,9 +31,7 @@ class MainActivity : AppCompatActivity() {
          val toast = Toast.makeText(applicationContext, text, duration)
          toast.show()
       }
-
-
-
+      
         // TODO("Create Intent to navigate")
 
         gotoLogin.setOnClickListener{
