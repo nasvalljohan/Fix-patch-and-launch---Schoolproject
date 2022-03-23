@@ -4,8 +4,7 @@ package com.ploohan.android_studio_lab_2
 
 /** FOURTH PROBLEM - Implement Navigation Controller */
 /* TODO -
-*        Make sure the navigation controller contains 2 fragments. (you decide what they include)
-*        Make sure you're able to 'navigate' with fragments setOnClickListener
+*        Fix Fragment-size, 1st fragment 25% of height, 2nd 75% and contain recyclerView       
 *        Send variable to UserActivityFragment instead of MainActivity.
 *
 * */

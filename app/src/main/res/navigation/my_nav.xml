@@ -3,11 +3,24 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/userwelcomefragment"
-    app:startDestination="@id/userActivity">
+    app:startDestination="@id/userActivityFragment">
 
     <fragment
-        android:id="@+id/userActivity"
-        android:name="com.ploohan.android_studio_lab_2.UserActivity"
+        android:id="@+id/userActivityFragment"
+        android:name="com.ploohan.android_studio_lab_2.UserActivityFragment"
         android:label="fragment_user_activity"
-        tools:layout="@layout/fragment_user_activity" />
+        tools:layout="@layout/fragment_user_activity">
+        <action
+            android:id="@+id/action_userActivity_to_recyclerViewActivityFragment"
+            app:destination="@id/recyclerViewActivityFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/recyclerViewActivityFragment"
+        android:name="com.ploohan.android_studio_lab_2.RecyclerViewActivityFragment"
+        android:label="fragment_recycler_view_activity"
+        tools:layout="@layout/fragment_recycler_view_activity" >
+        <action
+            android:id="@+id/action_recyclerViewActivityFragment_to_userActivity"
+            app:destination="@id/userActivityFragment" />
+    </fragment>
 </navigation>
