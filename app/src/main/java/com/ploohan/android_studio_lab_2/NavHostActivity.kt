@@ -2,7 +2,6 @@ package com.ploohan.android_studio_lab_2
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import android.widget.TextView
 
 
@@ -16,7 +15,6 @@ class NavHostActivity : AppCompatActivity() {
 
         //Value passed
         val name = intent.getStringExtra("textMsg")
-
         textMsg.text = "Welcome $name"
     }
 }

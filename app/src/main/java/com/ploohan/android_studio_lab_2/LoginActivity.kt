@@ -11,14 +11,7 @@ class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
-        // Changed setContentView to activity_login from _main
-        // Missing <acivity> in androidmanifest, added.
-        // Constraints in activity_login, height and width set, previous 0dp.
-        // Changed ID and text on button
-        // Added hint and input-type to editText
-        // Sent emailtext to mainactivity with intent, added to textview.
-        // Arraylist for email & password, checking if pw & email matches.
-        // RecyclerView added in fragment, hardcoded values printed from loop.
+
 
         val emailText = findViewById<EditText>(R.id.EmailText)
         val passWordText = findViewById<EditText>(R.id.pwText)
@@ -36,7 +29,6 @@ class LoginActivity : AppCompatActivity() {
         listPw.add("ploo")                       //1
         listPw.add("johanna")                    //2
         listPw.add("admin")                      //3
-
 
         loginBtn.setOnClickListener {
             val emailString = emailText.text.toString()
@@ -67,7 +59,7 @@ class LoginActivity : AppCompatActivity() {
             }
         }
     }
-    }
+}
 
 
 

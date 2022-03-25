@@ -32,7 +32,6 @@ class RecyclerViewActivityFragment : Fragment() {
     }
 
     //RecyclerView
-
     private val itemsList =  ArrayList<String>()
     private lateinit var customAdapter: CustomAdapter
     private lateinit var viewFollow: View

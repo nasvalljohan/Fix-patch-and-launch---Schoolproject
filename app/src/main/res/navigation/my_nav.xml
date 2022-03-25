@@ -14,6 +14,7 @@
             android:id="@+id/action_userActivity_to_recyclerViewActivityFragment"
             app:destination="@id/recyclerViewActivityFragment" />
     </fragment>
+
     <fragment
         android:id="@+id/recyclerViewActivityFragment"
         android:name="com.ploohan.android_studio_lab_2.RecyclerViewActivityFragment"
@@ -23,4 +24,5 @@
             android:id="@+id/action_recyclerViewActivityFragment_to_userActivity"
             app:destination="@id/userActivityFragment" />
     </fragment>
+    
 </navigation>

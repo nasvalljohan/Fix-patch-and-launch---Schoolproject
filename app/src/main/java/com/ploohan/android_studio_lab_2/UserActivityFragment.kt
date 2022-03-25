@@ -44,7 +44,6 @@ class UserActivityFragment : Fragment() {
         viewFollow = root
         loginButton = viewFollow.findViewById(R.id.changeFrag)
         loginButton.setOnClickListener {
-            println("Hello :)")
             parentFragmentManager.beginTransaction()
             Navigation.findNavController(root).navigate(R.id.action_userActivity_to_recyclerViewActivityFragment)
         }

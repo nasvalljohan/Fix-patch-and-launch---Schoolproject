@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-internal class CustomAdapter(private var itemsList: List<String>) : //kan vara annan arrayList
+internal class CustomAdapter(private var itemsList: List<String>) :
     RecyclerView.Adapter<CustomAdapter.MyViewHolder>(){
 
     // Init - Extend interface
@@ -23,7 +23,7 @@ internal class CustomAdapter(private var itemsList: List<String>) : //kan vara a
     }
 
     internal inner class MyViewHolder (view: View, listener: OnItemClickListener) : RecyclerView.ViewHolder(view){
-        var itemTextView: TextView = view.findViewById(R.id.itemTextView) //kan vara annat ID
+        var itemTextView: TextView = view.findViewById(R.id.itemTextView)
 
         init {
             itemView.setOnClickListener{
@@ -39,13 +39,11 @@ internal class CustomAdapter(private var itemsList: List<String>) : //kan vara a
     }
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
-        val item = itemsList[position] //kan vara annan arrayList
-        holder.itemTextView.text = item //kan vara annat ID
+        val item = itemsList[position]
+        holder.itemTextView.text = item 
     }
 
     override fun getItemCount(): Int {
-        return itemsList.size // kan vara annan arrayList
+        return itemsList.size
     }
-
-
 }
