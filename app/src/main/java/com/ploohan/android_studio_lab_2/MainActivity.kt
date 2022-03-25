@@ -21,16 +21,15 @@ class MainActivity : AppCompatActivity() {
 
         val gotoLogin = findViewById<Button>(R.id.gotoLogin)
 
-        val textMsg = findViewById<TextView>(R.id.welcomeMsg1)
-        val name = intent.getStringExtra("textMsg")
+        
 
-        if (name != null){
-         textMsg.text = "Welcome $name"
-         val text = "You are now logged in!"
-         val duration = Toast.LENGTH_LONG
-         val toast = Toast.makeText(applicationContext, text, duration)
-         toast.show()
-      }
+        //if (name != null){
+         //textMsg.text = "Welcome $name"
+         //val text = "You are now logged in!"
+         //val duration = Toast.LENGTH_LONG
+         //val toast = Toast.makeText(applicationContext, text, duration)
+         //toast.show()
+      //}
       
         // TODO("Create Intent to navigate")
 
