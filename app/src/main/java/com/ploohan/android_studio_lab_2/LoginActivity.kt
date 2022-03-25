@@ -47,6 +47,11 @@ class LoginActivity : AppCompatActivity() {
                     val intent = Intent(this, NavHostActivity::class.java).apply {
                         putExtra("textMsg", emailString)
                     }
+                    val text = "You are now logged in, welcome"
+                    val duration = Toast.LENGTH_LONG
+                    val toast = Toast.makeText(applicationContext, text, duration)
+                    toast.show()
+
                     startActivity(intent)
                 } else {
                     val text = "Email and password does not match"
