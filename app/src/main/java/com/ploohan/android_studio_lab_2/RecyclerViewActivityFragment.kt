@@ -5,6 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -29,12 +31,51 @@ class RecyclerViewActivityFragment : Fragment() {
         }
     }
 
+    //RecyclerView
+
+    private val itemsList =  ArrayList<String>()
+    private lateinit var customAdapter: CustomAdapter
+    private lateinit var viewFollow: View
+    private lateinit var layoutManager: LinearLayoutManager
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+
+            val root = inflater.inflate(R.layout.fragment_recycler_view_activity, container, false)
+            viewFollow = root
+
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_recycler_view_activity, container, false)
+
+        val recyclerView: RecyclerView = viewFollow.findViewById(R.id.recyclerView) //vår view
+        customAdapter = CustomAdapter(itemsList)
+        layoutManager = LinearLayoutManager(requireContext())
+
+        // NEW - Interface (on Item Click)
+        customAdapter.setOnItemClickListener(object: CustomAdapter.OnItemClickListener{
+            override fun onItemClick(position: Int) {
+                itemsList.removeAt(position)
+                customAdapter.notifyItemRemoved(position)
+            }
+        })
+
+        recyclerView.layoutManager = layoutManager
+        recyclerView.adapter = customAdapter
+        prepareItems()
+        return root
+    }
+
+    private fun prepareItems(){
+        for (index in 0..3){
+            itemsList.add("Apples$index")
+            itemsList.add("Bananas$index")
+            itemsList.add("Bread$index")
+            itemsList.add("Broccoli$index")
+            itemsList.add("Milk$index")
+            itemsList.add("Butter$index")
+        }
+        customAdapter.notifyDataSetChanged()
     }
 
     companion object {

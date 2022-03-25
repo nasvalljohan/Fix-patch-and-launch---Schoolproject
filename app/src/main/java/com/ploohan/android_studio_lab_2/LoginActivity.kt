@@ -18,6 +18,7 @@ class LoginActivity : AppCompatActivity() {
         // Added hint and input-type to editText
         // Sent emailtext to mainactivity with intent, added to textview.
         // Arraylist for email & password, checking if pw & email matches.
+        // RecyclerView added in fragment, hardcoded values printed from loop.
 
         val emailText = findViewById<EditText>(R.id.EmailText)
         val passWordText = findViewById<EditText>(R.id.pwText)

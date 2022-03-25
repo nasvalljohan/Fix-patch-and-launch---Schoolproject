@@ -4,10 +4,7 @@ package com.ploohan.android_studio_lab_2
 
 /** FOURTH PROBLEM - Implement Navigation Controller */
 /* TODO -
-*        Make another button on 2nd fragment to go back.
 *        Send variable to UserActivityFragment instead of MainActivity.
-*
-*
 * */
 
 /** FIFTH PROBLEM - Implement itemView - If you work in a group this is a must - OTHERWISE SKIP */
